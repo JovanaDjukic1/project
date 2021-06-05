@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'artisan.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resp.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.bootstrap.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/src/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js.map' %}"></script>
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+</head>
+<body>
+    <div class="header">
+        <img style="width:200px;height:48px;float:left;" src="{% static 'images\slika4.jpg' %}">
+        <p style="font-size: 20px;padding-left:20px; padding-top:10px;color:white;">Artisan</p>
+    </div>
+    <div class="header1">
+     
+       
+    </div>
+    <div class="main">
+        <img  src="{% static 'images\artisan4.png' %}">
+        
+    </div>
+    <div class="cards">
+        <div class="col-sm-6 card">
+         <p>
+            Artisan-komandna liniju u Laravel-a. 
+            Uveliko olakšava korisniku izradu aplikaije. Nudi brojne komande a listu tih 
+            komandi je moguće iščitati pomoću naredbe php artisan list. Za svaku 
+            naredbu iz Artisan liste postoji objašnjenje. Postoji mogućnost i direktnog poziva 
+            objašnjenja odredjene komande tako što se nakon ključnih riječi php artisan unese ime komande. 
+            Svaka naredba iz Artisan liste vezana je za odredjenu funkcionalnost. Instalacijom Artisana,
+            dobija se i Tinker okruženje koje omogućava vezu sa modelima, eventima,... Okruženje Tinker
+            se poziva naredbom php artisan tinker.
+            Pomoću Artisana moguće je i napraviti novu naredbu.
+         </p>
+        </div>
+        <div class="col-sm-6 card1">
+            <img style="width: 100%; height: 400px; width:400px;" src="{% static 'images\artisan1.webp' %}">
+        
+         
+        </div>
+    </div>
+    <div class="base">
+        <p>Artisan</p>
+ 
+     </div>
+    <div class="footer">
+        <p>Laravel</p>
+        </div>
+</body>
+</html>

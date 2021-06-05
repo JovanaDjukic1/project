@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'php.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resp.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.bootstrap.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/src/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js.map' %}"></script>
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+
+
+</head>
+<body>
+    <div class="header">
+        <img style="width:200px;height:48px;float:left;" src="{% static 'images\slika4.jpg' %}">
+        <p style="font-size: 20px;padding-left:20px; padding-top:10px;color:white;">PHP</p>
+    </div>
+    <div class="header1">
+     
+         
+    </div>
+    <div class="main">
+        <img  src="{% static 'images\php121.jpg' %}">
+        
+    </div>
+    <div class="cards">
+        <div class="col-sm-6 card">
+         <p>
+            PHP je jedan od najpopularnijih programskih jezika današnjice 
+            za izradu web aplikacija i mnogih drugih softverskih produkata.
+            Tvorac PHP-a je Rasmus Lerdorf a nastao je 1994.godine. 
+            Razvio se iz programskog jezika Perl. Kroz dalji period PHP je
+             doživio značajne promjene a danas je on stabina, prilagodjena, 
+             funkcionalna cjelina sa ogromnom programerskom podrškom.
+             Poslednja dostupna verzija je PHP 8 i besplatna je.
+         </p>
+        </div>
+        <div class="col-sm-6 card1">
+        <img style="width:100%;" src="{% static 'images\php5.jpg' %}">
+            
+        </div>
+    </div>
+    <div class="cards1">
+        <div class="col-sm-6 card2">
+        <img style="width:100%;" src="{% static 'images\php7.png' %}">
+
+        </div>
+        <div class="col-sm-6 card3">
+            <p>PHP je open-source skriptni programski jezik. 
+                Njegova glavna primjena je izrada dinamičkog web sadržaja. 
+                PHP kod se može direktno upisati u HTML sadržaj. Interpreter prolazi kroz 
+                sadržaj web stranice, pronalazi PHP naredbe koje izvršava a nakon toga se 
+                web sadržaj vraća klijentu. Spada u grupu imperativnog i objektno orjentisanog tipa. 
+                Koristi se često u kombinaciji sa Apache web serverom. Podržava ISAPI (Internet 
+                Server Application Program Interface) protokol koji se koristi za razvoj aplikacija.
+                 Takodje podržava i rad sa bazama podataka: MySQL, PostgreSQL, Oracle, SQLite,
+                  InfomixSybase i dr.PHP datoteke prepoznajemo po ekstenzijama .php, .php3 i .phtml
+                   i one mogu sadžati tekst, skripte i HTML tagove.
+            
+                   <p>Koristi se kao:</p>
+                <p> Skriptovanje od strane servera,</p>
+                <p>Skriptovanje komandne linije,</p>
+                <p>Pravljenje GUI aplikacija od strane klijenata.</p>
+        </div>
+    </div>
+    <div class="cards2">
+        <div class="col-sm-6 card4">
+            <p>Sintaksa PHP-a je slična sintaksi C-a i Perl-a.
+                Kod PHP-a je odvojen u posebne tagove. 
+                Naredbe u tagovima se medjusobno uvijek odvajaju sa ";".
+                Jezik PHP spada u grupu case-sensitive jezika (jezici osjetljivi na veličinu slova). 
+                Imena varijabli počinju sa znakom dolar. Prvi karakter nakon dolara 
+                može biti slovo ili podvlaka a preostali dio može biti sačinjen od slova, 
+                brojeva ili podvlake.
+                Vrijednosti konstanti se definišu pomoću funkcije define koja prima dva argumenta,
+                naziv konstante i njenu vrijednost.
+                <p>
+                Postoje tri tipa podataka. To su:
+                </p>
+                <p>
+                1.skalarni:integer, float, string, Boolean -tipovi kao u većini programskih jezika
+                </p>
+                <p>
+                2.kolekcije:array, object
+                </p>
+                <p>
+                3.posebni tipovi:izvori,NULL.
+                </p>
+                <p>
+                Postoje ugradjene funkcije kao što su echo, if, while, ... 
+                a korisnik može proizvoljno definisati svoje funkcije.</p>
+        </div>
+        <div class="col-sm-6 card5">
+        <img style="width:100%;" src="{% static 'images\php8.png' %}">
+
+        </div>
+    </div>
+    <div class="base">
+        <p>PHP</p>
+ 
+     </div>
+
+    <div class="footer">
+        <p>Laravel</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+{% load social_share %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Laravel</title>
+    <!-- Bootstrap CSS -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resp.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.bootstrap.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/src/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js.map' %}"></script>
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+    
+    
+  </head>
+  <body>
+    
+
+        <div class="dropdown">
+        <button class="dropbtn"><img style="width:200px;height:48px;float:left;" src="{% static 'images\slika4.jpg' %}"></button>
+        <div class="dropdown-content">
+            <ul>
+            <li><a href="{% url 'history' %}">History & Versions</a></li>
+            <li><a href="{% url 'mvcarhitecture' %}">MVC arhitecture</a></li>
+            <li><a href="{% url 'composer' %}">Composer</a></li>
+            <li><a href="{% url 'artisan' %}">Artisan</a></li>
+            <li><a href="{% url 'other' %}">More</a></li>
+            </ul>
+
+
+        </div>
+      </div>
+      <div class="header1">
+        <ul>
+            
+            <li><a href="{% url 'support' %}">Support</a></li>
+                <li>{% post_to_facebook object_or_url "Post to Facebook" %}</li>
+                <li>{% post_to_twitter "New content: {{object.title}}. Check it out!" object_or_url "Post to Twitter" %} </li>
+                <li style="padding-top:9px;">{% post_to_linkedin object_or_url %}</li>
+        </ul>
+    </div>
+    
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  src="{% static 'images/laravel1.png' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img  src="{% static 'images/laravel9.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img  src="{% static 'images/laravel12.webp' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="cards">
+        <a class="col-sm-4" href="{% url 'composer' %}">
+            <div class="card">
+                <p>Composer</p>
+                <img style="width: 100%;height:243px;" src="{% static 'images\composer.png' %}">
+            </div>
+        </a>
+        <a class="col-sm-4" href="{% url 'artisan' %}">
+            <div class="card">
+                <p>Artisan</p>
+                <img style="width: 100%;height:245px;" src="{% static 'images\artisan.jpg' %}">
+            </div>
+        </a>
+        <a class="col-sm-4" href="{% url 'other' %}">
+            <div class="card" >
+                <p>More</p>
+                <img style="width: 100%;height:243px;" src="{% static 'images\other.png' %}">
+            </div>
+        </a>
+    </div>
+    <div class="panels">
+        <a class="col-sm-6" href="{% url 'framework' %}">
+            <div class="panel">
+            <p>Frameworks</p>
+            <img style="width: 100%;height:410px;" src="{% static 'images\framework1.jpg' %}">
+            </div>
+        </a>
+        <a class="col-sm-6" href="{% url 'php' %}">
+            <div class="panel">
+            <p>PHP</p>
+            <img style="width: 100%;" src="{% static 'images\php1.jpg' %}">
+            </div>
+        </a>
+  
+    </div>
+    <div class="newses">
+       <p>News & Events</p>
+       <div class="col-sm-4">
+           <div class="news">
+              <h4>Sublime Text 4</h4>
+              <p>The first stable release of Sublime Text 4 is now released and available. 
+                It now works with Apple Silicon and Linux ARM64, 
+                and includes a lot of great new features:Tab Multi-Select,Refreshed UI,
+                Context-Aware Auto Complete,TypeScript, JSX and TSX Support,
+                Superpowered Syntax Definitions</p>
+              <img style="width:100%;" src="{% static 'images\new2.jpg' %}">
+              
+              </div>
+       </div>
+       <div class="col-sm-4">
+          <div class="news">
+              <h4>Find N+1 problems instntly by disabling lazy loading</h4>
+              <p>In the next release of Laravel 8, you can strictly disable lazy loading
+                 entirely, resulting in an exception:Preventing lazy loading in development 
+                 can help you catch N+1 bugs earlier on in the development process.
+                 The Laravel ecosystem has various tools to identify N+1 queries. However, this approach 
+                 brings the issue front-and-center by throwing an exception.</p>
+              <img style="width:100%;" src="{% static 'images\new3.png' %}">
+              
+              </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="news">
+              <h4>Laravel Nova Inline Select</h4>
+              <p>Laravel Nova Inline Select is a package that allows you to change the status of a
+                 resource directly from the index or detail views. Nova Inline Select solves these
+                  problems by adding a form to the list of resources and it
+                  can even auto submit when change a the value. </p>
+              <img style="width:100%;" src="{% static 'images\noval.jpg' %}">
+              
+              </div>
+      </div>
+    </div>
+    <div class="popular">
+      <h4>The best(2012-2021)</h4>
+    <div class="col-sm-6 first">
+      <a class="why" href="{% url 'why' %}">Why Laravel?</a>
+    
+    <p>Top 10 Laravel Features You Need To Know</p>
+
+    </div>
+    <div class="col-sm-6 second">
+    <video style="width:100%;height:auto;" class="video-fluid z-depth-1" autoplay loop controls muted>
+      <source src="static/images/video3.mp4" type="video/mp4" />
+    </video>
+    </div>
+    </div>
+      
+    
+  
+  <div class="footer">
+  <p>Laravel</p>
+  </div>
+  
+
+  
+    </body>
+    </html>
+
+
+

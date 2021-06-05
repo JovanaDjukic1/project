@@ -1,0 +1,84 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header{
+    
+    height:50px;
+    background-color: rgb(47,47,47);
+    letter-spacing: 3px;
+
+}
+.header1{
+    height: 40px;
+}
+
+.panels .panel{
+    padding-top:200px;
+    padding-left: 200px;
+    text-align:justify;
+    font-size:20px;
+}
+.cards .card{
+    border: none;
+}
+.cards .card1{
+    padding-top:200px;
+    padding-right: 200px;
+    text-align:justify;
+    font-size:20px;
+
+}
+.bottom{
+    clear: both;
+}
+h2{
+    color:rgb(88, 88, 88);
+    margin-left:400px;
+    padding-top:100px;
+    
+}
+.base{
+    clear:both;
+}
+.base p{
+    font-size: 130px;
+    
+}
+.footer{
+    clear: both;
+    height: 50px;
+    background-color: rgb(47, 47, 47);
+}
+.footer p{
+    color:rgb(88, 88, 88);
+    text-align: center;
+    padding-top:15px;
+    letter-spacing: 3px;
+
+}
+@media only screen and (max-width: 678px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .panels .panel{
+        padding-left:0px;
+        padding-top:50px;
+    }
+    .cards .card{
+        padding-top:50px;
+        
+    }
+    .cards .card1{
+        padding-right: 0px;
+        padding-top:50px;
+    }
+    h2{
+        padding-top:50px;
+        margin-left:0px;
+    }
+    .base p{
+        font-size: 30px;
+    }
+}

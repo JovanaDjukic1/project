@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'other.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resp.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.bootstrap.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/src/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js.map' %}"></script>
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+</head>
+<body>
+    <div class="header">
+        <img style="width:200px;height:48px;float:left;" src="{% static 'images\slika4.jpg' %}">
+        <p style="font-size: 20px;padding-left:20px; padding-top:10px;color:white;">More</p>
+    </div>
+    <div class="header1">
+    
+        
+    </div>
+    <div class="basic">
+        <img style="width:100%;" src="{% static 'images\posebna.jpg' %}">
+
+    <div class="main">
+        <img style="position:absolute;top:90px;left:330px;height:250px;" src="{% static 'images\posebna.jpg' %}">
+
+    </div>
+    <div class="cards">
+        <div class="col-sm-3 card con">
+        <img style="width:100%;" src="{% static 'images\modularity1.jpg' %}">
+         <h4>Modularity</h4>
+         <p>Mogućnost podjele komponenti aplikacije radi lakšeg upravljanja aplikacijama.
+              Razdvajanjem u module vrlo lako se uočavaju i otklanjaju greške.</p>
+        </div>
+    
+        <div class="col-sm-3 card con">
+        <img style="width:100%;" src="{% static 'images\authentication.jpeg' %}">
+            <h4>Authentication</h4>
+            <p>Sastavni dio danasnjih web aplikacija. Uz pomoć komandi stvara se sistem za autetifikaciju.
+                 Dodatno, Laravel pruža i mogućnost pisanja sopstvene autentifikacije, 
+                koja je definisana u dokumentaciji.</p>
+        </div>
+
+        <div class="col-sm-3 card con">
+        <img style="width:100%;height:150px;" src="{% static 'images\caching.jpg' %}">
+             <h4>Caching</h4>
+             <p>
+                Proces pohranjivanja podataka na privremenu memoriju koja se po potrebi može preuzimati.
+                 Ovim se performanse aplikacije povećavaju.
+                 Laravel kešira skoro sve podatke a ovim se smanjuje vrijeme obrade.
+             </p>
+        </div>
+    </div>
+   </div>
+   <div class=" panels">
+       <div class="col-sm-4 panel">
+           
+        <img style="width:100%;" src="{% static 'images\routing.png' %}">
+        <h4>Routing</h4>
+           <p>Predstavlja grupisanje ruta,njihovo imenovanje, koje Laravel dalje filtrira a 
+               onda ih vezuje za svoj model.
+                U Laravel-u se rute mogu koristiti za pravljenje URL adresa za pretraživače. </p>
+       </div>
+       <div class="col-sm-4 panel">
+           
+        <img style="width:100%;" src="{% static 'images\restfulcontrollers.jpg' %}">
+        <h4>Restful Controllers</h4>
+           <p>
+            Omogućavaju razdvajanje logike GET i POST zahtijeva. Moguće je i kreiranje 
+            Resource Controllers (kontroleri koji su vezani za CRUD entiteta).
+           </p>
+       </div>
+       <div class="col-sm-4 panel">
+          
+        <img style="width:100%;" src="{% static 'images\debugger.jpg' %}">
+        <h4>Debugging</h4>
+           <p>Laravel sadrži PHPUnit odgovoran za testiranje. 
+               Testiranje predstavlja jako važnu kariku prilikom kreiranja svakog projekta. 
+               Kvalitetnim testiranjem  omogućeno je lako uočavanje i otklanjanje svih grešaka.</p>
+       </div>
+   </div>
+   <div class="panels">
+   
+    <div class="col-sm-4 panel">
+     <img style="width:100%;" src="{% static 'images\helpers.jpg' %}">
+      <h4>Helpers</h4>
+     <p>
+         Esencijalan dio Laravela. Ugradjene funkcije pomazu  brzom i kvalitetnom kreiranju funkcija.
+     </p>
+     </div>
+    <div class="col-sm-4 panel">
+        
+     <img style="width:100%;" src="{% static 'images\querybuilder.jpg' %}">
+     <h4>Query Builder</h4>
+         <p>
+            Za kreiranje upita koje se šalju bazama podataka. 
+            Sadrži funkcije koje se koriste za filtriranje podataka.
+         </p>
+    </div>
+    <div class="col-sm-4 panel">
+     <img style="width:100%;" src="{% static 'images\migration.jpg' %}">
+      <h4>Migration</h4>
+      <p>
+        Za pravljenje strukture baze podataka. Za pisanje migracija može da se koristi PHP umijesto SQL-a. 
+        Sa migracijama takodje mogu da se prave tabele i indeksi. </p>
+    </div>
+    
+   </div>
+   <div class="panels">
+    
+       <div class="col-sm-4 panel">
+           
+        <img style="width:100%;" src="{% static 'images\blade.jpg' %}">
+        <h4>Blade template</h4>
+         <p>
+            Jedan od najmoćnijih alata Laravela. Kako su PHP kod i HTML kod medjusobno izmiješani,
+            otežano je snalaženje u takvom zapisu, jer ova dva koda nije moguće u potpunosti razdvojiti.
+            Da bi se omogogućili sažimanje ova dva koda koristi se Blade.
+            Olakšava formatiranje podataka, sadržavajući pomoćne funkcije.
+            Omogućava nasljedjivanje šablona i sekcija. 
+
+         </p>
+       </div>
+       <div class="col-sm-4 panel">
+        
+        <img style="width:100%;" src="{% static 'images\eloquent1.jpg' %}">
+         <h4>Eloquent</h4>
+         <p>
+            Napredna implementacija za rad sa bazama podataka. Zahvaljujući ovoj strukturi
+             tabele baza podataka su predstavljene kao klase tako da se vrši lakši pristup i 
+             manipulacija podacima. Uz ovu strukturu 
+            dolazi i CLI (Command-Line-Interface) sa bezbroj ugradjenih komandi.
+         </p>
+       </div>
+       <div class="col-sm-4 panel">
+        <img style="width:100%;" src="{% static 'images\localization.jpg' %}">
+         <h4>Localization</h4>
+         <p>Laravel omogućava kreiranje višejezičnih aplikacija. 
+             Ova osobina je od posebne važnosti za multinacionalne projekte.</p>
+       </div>
+   </div>
+   <div class="footer">
+    <p>Laravel</p>
+    </div>
+</body>
+</html>

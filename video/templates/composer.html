@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composer</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'composer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resp.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.bootstrap.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/src/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js.map' %}"></script>
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+</head>
+<body>
+    <div class="header">
+        <img style="width:200px;height:48px;float:left;" src="{% static 'images\slika4.jpg' %}">
+        <p style="font-size: 20px;padding-left:20px; padding-top:10px;color:white;">Composer</p>
+    </div>
+    <div class="header1">
+     
+         
+    </div>
+    <div class="main">
+        <img  src="{% static 'images\composer1.jpeg' %}">
+        
+    </div>
+    
+    <div class="cards">
+        <div class="col-md-6 card">
+         <p>
+            Drugi najznačajniji alat u Laravel okruženju jeste Composer.
+            Njega instaliramo pomoću komande composer install. 
+            Sa njegovom instalacijom stižu i svi paketi iz njegove konfiguracije.
+            Pomoću njega vrši se preuzimanje svih paketa koji su korisniku potrebni. 
+            Ti paketi se smiještaju na odredjeno mjesto u aplikaciji.
+            Composer naredba izgleda ovako: composer require ime-developera
+            /naziv-paketa(verzija-paketa). Kreiranjem nove Laravel aplikacije kreira
+            se composer.jason datoteka sa instaliranim paketima koji
+            su zapisani u obliku JSON teksta (JavaScrpt Object Notation).
+         </p>
+        </div>
+        <div class="col-md-6 card1">
+        <img style="width:100%;" src="{% static 'images\laravel18.jpg' %}">
+            
+        </div>
+    </div>
+
+    <div class="base">
+       <p>Composer</p>
+
+    </div>
+    <div class="footer">
+        <p>Laravel</p>
+        </div>
+</body>
+</html>

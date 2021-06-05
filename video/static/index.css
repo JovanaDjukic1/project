@@ -1,0 +1,268 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.dropdown{
+    background-color: rgb(47, 47, 47);
+    position: relative;
+    width: 100%;
+    height: 50px;
+    letter-spacing: 3px;
+}
+.dropdown .dropbtn {
+    position:absolute;
+    top:0;
+    left:0;
+    border:none;
+}
+.dropdown .dropdown-content ul {
+    position: absolute;
+    top:0px;
+    left:200px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+.dropdown .dropdown-content li{
+    display:inline;
+    float: left;
+    list-style: none;
+    
+}
+.dropdown .dropdown-content a{
+    display: block;
+    float:none;
+    padding:13px;
+    color:rgb(17, 17, 17);
+    text-decoration: none;
+}
+.dropdown .dropdown-content a:hover{
+    color:rgb(88, 88, 88);
+}
+@media only screen and (max-width: 678px) {
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown .dropbtn {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(44,44,44);
+    color:white;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown .dropdown-content a {
+    padding:10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown .dropdown-content a:hover {
+      background-color: rgb(47, 47, 47);
+      color:rgb(88, 88, 88);
+    
+}
+
+  
+  .dropdown:hover .dropdown-content {
+      position: absolute;
+      display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:rgb(47, 47, 47);
+  } 
+} 
+  .header1{
+    height: 40px;
+
+}
+
+.header1 ul{
+    list-style: none;
+
+}
+.header1 a{
+    text-decoration: none;
+    float:right;
+    padding:10px;
+    color:black;
+}
+.header1 li{
+    float:right;
+}
+.header1 a{
+    letter-spacing: 1px;
+}
+.header1 a:hover{
+    color:rgb(88,88,88);
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.carousel-item img{
+    height: 600px;
+}
+.cards{
+    clear:both;
+    height: 200px;
+    letter-spacing: 3px;
+}
+.cards a{
+    text-decoration: none;
+    color:black;
+}
+.cards a:hover{
+    color:rgb(88,88,88);
+}
+.cards .card{
+    
+    padding:5px;
+}
+.cards .card p{
+ font-size: 20px;
+ text-align: center;
+}
+.panels{
+    clear: both;
+    height: 400px;
+    padding:20px;
+    letter-spacing: 3px;
+}
+.panels a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.panels .panel{
+    border: 1px solib black;
+    padding: 20px;
+}
+.panels .panel p{
+    padding: 5px;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+}   
+.panels a:hover{
+    color:rgb(88,88,88);
+ } 
+.newses{
+    clear: both;
+    height: 400px;
+}
+.newses p{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(47, 47, 47);
+}
+.newses .news{
+    padding:5px;
+}
+.newses .news h4{
+    text-align: center;
+    color:rgb(47, 47, 47);
+}
+.newses .news p{
+    font-size: 15px;
+    text-align: justify;
+}
+.hello .kartica{
+    padding:30px;
+}
+.popular{
+    clear: both;
+    padding-top: 50px;
+}
+.first{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+}
+.first p{
+    padding-left: 100px;
+    font-size: 25px;
+    color: rgb(47, 47, 47);
+}
+.popular h4{
+    text-align: center;
+}
+.popular .first .why{
+    margin-left: 250px;
+    padding:20px;
+    font-size: 20px;
+    background-color: rgb(160, 158, 158);
+    border-radius: 5px;
+    text-decoration: none;
+    color:rgb(17, 17, 17);
+}
+.popular .first {
+    margin-top:150px;
+}
+.popular .first p{
+    padding-top:30px;
+}
+.first .why:hover{
+    background-color: rgb(47, 47, 47);
+}
+
+.second{
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer{
+    clear: both;
+    height: 50px;
+    background-color: rgb(47, 47, 47);
+}
+.footer p{
+    color:rgb(88, 88, 88);
+    text-align: center;
+    padding-top:15px;
+    letter-spacing: 3px;
+
+}
+@media only screen and (max-width: 678px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .carousel-item img{
+         height: 200px;
+    }
+    .popular .first .why{
+         margin-left: 160px;
+    }
+    .first p{
+        padding-left: 0px;
+    }
+}
+
+

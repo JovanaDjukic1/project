@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC Arhitecture</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mvcarhitecture.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resp.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.bootstrap.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/src/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js' %}"></script>
+    <script src="{% static 'js/dist/carousel.js.map' %}"></script>
+    <script src="{% static 'js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-slim.min.js' %}"></script>
+
+
+
+</head>
+<body>
+    <div class="header">
+        <img style="width:200px;height:48px;float:left;" src="{% static 'images\slika4.jpg' %}">
+        <p style="font-size: 20px;padding-left:20px; padding-top:10px;color:white;">MVC Arhitecture</p>
+    </div>
+    <div class="header1">
+    
+         
+    </div>
+    <div class="main">
+        <img  src="{% static 'images\mvcarh1.png' %}">
+        
+    </div>
+    <div class="panels">
+        
+        <div class="col-sm-6 panel">
+          <p>MVC (Model-View-Controller) arhitektura je model koji se 
+              koristi za razvoj korisničkog interfejsa. Nastao je 1970.godine. 
+              Začetnik ideje ovakve arhitekture je bio norveški informatičar, Trigvi Riensku. 
+              Danas zauzima vodeće mjesto u izradi web aplikacija. Postojeći softverski kod 
+              se dijeli na tri oblasti (klase) što omogućava lake modifikacije na jednoj klasi
+               tako da ne mijenjamo druge dvije klase. Sve vrijeme ove tri klase su u medjusobnoj
+                interakciji sa korisnikom. 
+              
+            Ovakvim modelovanjem uveliko se olakšao posao programerima. </p>
+        </div>
+        <div class="col-sm-6 panel1">
+            <img  src="{% static 'images\mvc4.jpg' %}">
+                
+            </div>
+    </div>
+    <div class="cards">
+        <div class="col-sm-4 card">
+            <img style="height:250px;" src="{% static 'images\mvc5.jpeg' %}">
+            <h4>Model</h4>
+            <p>Centralni dio koji je odgovoran za komunikaciju sa podacima, 
+                logiku i pravila aplikacije. Sadrži SQL upite i podatke o informacijama 
+                objekata koji se nalaze u bazama podataka. Može da sadrži jedan podatak 
+                ili čitavu strukturu podataka. Iz modela nije moguće direktno pristupiti
+                 podacima već kontroler od njega preuzima podatke. 
+                Dakle kontroler predstavlja vezu izmedju modela i spoljašnjosti.</p>
+        </div>
+        <div class="col-sm-4 card">
+            <img  src="{% static 'images\mvc1.jpg' %}">
+            <h4>View</h4> 
+            <p>  Prikaz podataka iz modela u bilo kom formatu. 
+                Sadrži korisničko okruženje aplikacija (HTML, CSS, JavaScript, JSON, XML,...).
+                 Povezan je sa modelom. Ponaša se kao filter jer dozvoljava prikaz samo odredjenih
+                  vrijednosti koje opisuju podatke a to su atributi. Ostali se zanemaruju i takva 
+                  struktura dostupna je korisniku
+                 koji može vidjeti šta pogled prikazuje dok su kontroler i model skriveni.</p>
+        </div>
+        <div class="col-sm-4 card">
+            <img style="height: 250px;" src="{% static 'images\controller.png' %}">
+            <h4>Controller</h4>
+            <p>Dio odgovoran za pretvaranje ulaznih podataka u komande 
+                koje će dalje upravljati modelom. Predstavlja vezu između modela i pogleda. 
+                Prikuplja ulazne podatke koje dobija od strane korisnika putem ulazno-izlazne
+                 periferije i vrši izmjene na modelu. Kada pretraživač pozove URL adresu kontroler 
+                 se prvi poziva. Takodje upravlja i korisničkim zahtjevima.</p>
+        </div>
+    </div>
+    <div class="base">
+        <p>MVC Arhitecture</p>
+ 
+     </div>
+    <div class="footer">
+        <p>Laravel</p>
+        </div>
+</body>
+</html>
